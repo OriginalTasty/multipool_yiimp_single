@@ -64,8 +64,8 @@ if [[ ("$wireguard" == "true") ]]; then
 else
 sudo sed -i 's/host = yaampdb/host = localhost/g' *.conf
 fi
-sudo sed -i 's/database = yaamp/database = '${YiiMPDBName}'/g' *.conf
-sudo sed -i 's/username = root/username = '${StratumDBUser}'/g' *.conf
+sudo sed -i 's/database = yaamp/database = yiimpfrontend/g' *.conf
+sudo sed -i 's/username = root/username = stratum/g' *.conf
 sudo sed -i 's/password = patofpaq/password = '${StratumUserDBPassword}'/g' *.conf
 
 #set permissions
